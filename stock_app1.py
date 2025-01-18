@@ -54,7 +54,7 @@ def index():
             stocksymbol = request.form['stocksymbol']
             try:
                 # Load the model
-                model_path = f"/Volumes/iMac2024/2024_nmodes/clustering_2024/news_flask_app/stock_models/{stocksymbol}.h5"
+                model_path = f"stock_models/{stocksymbol}.h5"
                 stock_model_loaded = load_model(model_path)
                 
                 # Initialize PredictStocks with the stock name
